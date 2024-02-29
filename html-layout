@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Three Column HTML Layout</title>
+    <style>
+        .header {
+            background-color: #333; /* Same color as footer */
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left-menu {
+            background-color: #f39c12; /* Yellow */
+        }
+
+        .main-content {
+            background-color: #2ecc71; /* Light Green */
+            height: 200px;
+            font-weight: bold;
+        }
+
+        .right-menu {
+            background-color: #e74c3c; /* Red */
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="column left-menu">
+            <h2 style="color: #fff;">Side Content</h2>
+        </div>
+        <div class="column main-content">
+            <h2>Main Content</h2>
+        </div>
+        <div class="column right-menu">
+            <h2 style="color: #fff;">Side Content</h2>
+        </div>
+    </div>
+    <footer class="footer"> Copyright © 2024 My Website </footer>
+</body>
+
+</html>
 
